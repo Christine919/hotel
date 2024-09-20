@@ -14,11 +14,9 @@ import BreakfastImage from '../assets/breakfast.png';
 import Pool1Image from '../assets/pool1.png'; 
 import Pool2Image from '../assets/pool2.png'; 
 import LocalSight1Image from '../assets/sight1.png'; 
-import LocalSight2Image from '../assets/sight2.png'; 
 import LocalSight3Image from '../assets/sight3.png'; 
 import LocalSight4Image from '../assets/sight4.png'; 
 import LocalSight5Image from '../assets/sight5.png'; 
-import LocalSight6Image from '../assets/sight6.png'; 
 
 const Services = () => {
 

@@ -13,6 +13,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-darkgrey">
         <Header />
+        <div className="pt-20"> {/* Add padding top here */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/rooms" element={<Rooms />} />
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
+      </div>
       </div>
     </Router>
   );
