@@ -35,7 +35,7 @@ const Home = () => {
             whileHover={{ scale: 1.1 }}
             className="bg-primary text-darkgrey py-3 px-8 rounded-md text-lg"
           >
-            Book Your Stay
+             <Link to="/rooms">Book Your Stay</Link>
           </motion.button>
         </motion.section>
       </div>

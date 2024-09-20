@@ -7,13 +7,15 @@ import Rooms from './pages/Rooms';
 import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop'; 
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-darkgrey">
         <Header />
-        <div className="pt-20"> {/* Add padding top here */}
+        <ScrollToTop />
+        <div className="pt-20"> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/rooms" element={<Rooms />} />

@@ -251,7 +251,7 @@ const Services = () => {
                 <p className="gridwhen"><i className="fa fa-clock-o" /> 17:22 17th Feb 2015</p>
                 <p className="gridwho"><i className="fa fa-user" /> Clark Kent</p>
               </div>
-              <p className="gridexerpt">Soar through a breathtaking winter landscape on a scenic cable car journey. Enjoy panoramic views of snow-capped peaks and serene valleys.</p>
+              <p className="gridexerpt">Soar through a breathtaking winter landscape on a scenic cable car journey.</p>
               <a href="#" className="grid-btn grid-more"><span>More</span> <i className="fa fa-plus" /></a>
             </div>
           </div>

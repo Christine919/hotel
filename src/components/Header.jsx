@@ -12,7 +12,9 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-darkgrey text-lightgrey p-5 flex justify-between items-center shadow-lg">
-      <h1 className="text-primary font-bold text-3xl">LuxeStay</h1>
+      <h1 className="text-primary font-bold text-3xl">
+  <Link to="/">LuxeStay</Link>
+</h1>
       
       {/* Mobile Menu Button */}
       <div className="md:hidden">
