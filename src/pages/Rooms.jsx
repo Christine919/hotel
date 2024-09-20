@@ -28,8 +28,16 @@ const rooms = [
 
 const Rooms = () => {
   return (
-    <div className="bg-darkgrey text-lightgrey min-h-screen p-5 sm:p-10">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">Our Rooms</h2>
+    <div className="bg-gradient-to-r from-[#1a1a1a] to-[#2b2b2b] text-lightgrey min-h-screen p-10 flex flex-col items-center">
+    {/* Page Title */}
+    <motion.h2 
+      className="text-5xl font-bold mb-10"
+      initial={{ opacity: 0, y: -30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      Our Rooms
+    </motion.h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {rooms.map((room, index) => (
           <motion.div
