@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Banner from "../assets/Banner.png";  
-import Banner2 from "../assets/Banner2.png";
+import Banner3 from "../assets/Banner3.png";
 
 const Home = () => {
   return (
@@ -59,7 +59,7 @@ const Home = () => {
       <div 
         className="bg-cover bg-center min-h-[60vh] flex items-center justify-center text-center p-5"
         style={{
-          backgroundImage: `url(${Banner2})`,
+          backgroundImage: `url(${Banner3})`,
         }}
       >
         <motion.div
