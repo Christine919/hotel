@@ -33,12 +33,12 @@ const About = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-10 w-full">
         {/* First Image and Text */}
         <motion.div 
-          className="flex flex-col items-center bg-[#2f2f2f] rounded-lg shadow-lg p-6"
+          className="flex flex-col items-center bg-[#2f2f2f] rounded-lg shadow-lg p-6"s
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <img src={SpaImage1} alt="Spa" className="rounded-lg shadow-lg w-full" />
+          <img src={SpaImage1} alt="Spa" className="rounded-lg shadow-lg w-full h-64 object-cover" />
           <h3 className="text-2xl font-semibold mt-4">Unmatched Comfort</h3>
           <p className="text-center mt-2">
             Relax in our beautifully designed rooms featuring the finest linens, modern amenities, and personalized service.
@@ -52,7 +52,7 @@ const About = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <img src={DiningImage2} alt="Dining" className="rounded-lg shadow-lg w-full" />
+          <img src={DiningImage2} alt="Dining" className="rounded-lg shadow-lg w-full h-64 object-cover" />
           <h3 className="text-2xl font-semibold mt-4">World-Class Dining</h3>
           <p className="text-center mt-2">
             Delight your taste buds with gourmet cuisine prepared by award-winning chefs at our exquisite on-site restaurants.
@@ -66,7 +66,7 @@ const About = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <img src={Banner3} alt="Wellness" className="rounded-lg shadow-lg w-full" />
+          <img src={Banner3} alt="Wellness" className="rounded-lg shadow-lg w-full h-64 object-cover" />
           <h3 className="text-2xl font-semibold mt-4">Wellness & Relaxation</h3>
           <p className="text-center mt-2">
             Indulge in rejuvenating spa treatments and wellness programs tailored to your specific needs.

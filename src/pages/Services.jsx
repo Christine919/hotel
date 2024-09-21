@@ -24,172 +24,57 @@ const Services = () => {
     <div className="bg-darkgrey text-lightgrey min-h-screen p-5 sm:p-10">
             {/* Section: Header */}
             <div className="p-4 bg-gradient-to-r from-[#190f2c] to-[#200b30]">
-      <motion.div
-        className="text-center mb-16"
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <h1 className="text-5xl sm:text-6xl font-bold mb-4">Our Deluxe Services</h1>
-        <p className="text-lg sm:text-xl">
-          Experience the best we have to offer, from relaxing spa treatments to fine dining,
-          and enjoy premium room service tailored to your needs.
-        </p>
-      </motion.div>
-      <div className="grid grid-cols-auto-fit gap-4">
-        <div className="flex justify-center items-center">
-          <motion.img
-            src={DiningImage7}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          />
-        </div>
-        <div className="flex justify-center items-center">
-          <motion.img
-            src={DiningImage4}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          />
-        </div>
-        <div className="flex justify-center items-center tall col-span-2">
-          <motion.img
-            src={SpaImage1}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          />
-        </div>
-        <div className="flex justify-center items-center wide col-span-3">
-          <motion.img
-            src={DiningImage6}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          />
-        </div>
-        {/* <div className="flex justify-center items-center">
-          <motion.img
-            src={DiningImage3}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-          />
-        </div>
-        <div className="flex justify-center items-center tall col-span-2">
-          <motion.img
-            src={DiningImage4}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          />
-        </div> */}
-        <div className="flex justify-center items-center big col-span-2 row-span-2">
-          <motion.img
-            src={DiningImage5}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.7 }}
-          />
-        </div>
-        <div className="flex justify-center items-center">
-          <motion.img
-            src={DiningImage2}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-          />
-        </div>
-        <div className="flex justify-center items-center wide col-span-3">
-          <motion.img
-            src={Pool1Image}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.9 }}
-          />
-        </div>
-        <div className="flex justify-center items-center big col-span-2 row-span-2">
-          <motion.img
-            src={BreakfastImage}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1.0 }}
-          />
-        </div>
-        <div className="flex justify-center items-center">
-          <motion.img
-            src={DiningImage1}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1.1 }}
-          />
-        </div>
-        <div className="flex justify-center items-center">
-          <motion.img
-            src={DiningImage8}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1.2 }}
-          />
-        </div>
-        {/* Move some images to column 3 - row 1, row 4, and row 6 */}
-        <div className="flex justify-center items-center col-start-3 row-start-1">
-          <motion.img
-            src={DiningImage3}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1.3 }}
-          />
-        </div>
-        <div className="flex justify-center items-center col-start-3 row-start-4">
-          <motion.img
-            src={Pool2Image}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1.4 }}
-          />
-        </div>
-        <div className="flex justify-center items-center col-start-3 row-start-2">
-          <motion.img
-            src={SpaImage2}
-            alt=""
-            className="w-full h-auto object-cover rounded-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1.5 }}
-          />
-        </div>
+  <motion.div
+    className="text-center mb-16"
+    initial={{ y: -50, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.5 }}
+  >
+    <h1 className="text-5xl sm:text-6xl font-bold mb-4">Our Deluxe Services</h1>
+    <p className="text-lg sm:text-xl">
+      Experience the best we have to offer, from relaxing spa treatments to fine dining,
+      and enjoy premium room service tailored to your needs.
+    </p>
+  </motion.div>
+
+  <div className="grid grid-cols-auto-fit gap-4">
+    {[
+      { src: DiningImage2, delay: 0.1 },
+      { src: DiningImage3, delay: 1.3, className: "col-start-1 row-start-2"},
+      { src: DiningImage1, delay: 1.3, className: "col-start-1 row-start-3"},
+      { src: DiningImage4, delay: 0.2, className: "col-span-2 row-span-3" },
+      { src: SpaImage2, delay: 1.5, className: "col-span-2 row-span-3" },
+      { src: SpaImage1, delay: 0.3 },
+      { src: Pool2Image, delay: 1.2 },
+      { src: BreakfastImage, delay: 1.4 },
+      { src: DiningImage5, delay: 0.4, className: "col-span-3" },
+      { src: DiningImage6, delay: 0.7, className: "col-span-1 row-span-2" },
+      { src: DiningImage7, delay: 0.7, className: "col-span-1 row-span-2" },
+      { src: DiningImage8, delay: 0.8, className: "col-span-1 row-span-2" },
+      { src: Pool1Image, delay: 0.9, className: "col-span-3" },
+
+    ].map((imageData, index) => (
+      <div key={index} className={`flex justify-center items-center ${imageData.className || ""}`}>
+        <motion.img
+  src={imageData.src}
+  alt=""
+  className="w-full h-auto object-cover rounded-md"
+  initial={{ opacity: 0 }}
+  animate={{ 
+    opacity: 1,
+    scale: [1, 1.02, 1],  /* Combined animation */
+    transition: { 
+      duration: 0.2, 
+      delay: imageData.delay,
+      scale: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+    }
+  }}
+  whileHover={{ scale: 1.05 }}  /* Pulse on hover */
+/>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
 
       {/* Section: Services Information */}
       <div className="mb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

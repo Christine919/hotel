@@ -7,6 +7,10 @@ module.exports = {
         lightgrey: '#f5f5f5',
         primary: '#FFD700',
       },
+      fontFamily: {
+        title: ['Lora', 'serif'],
+        body: ['Roboto', 'sans-serif'],
+      },
     },
   },
   plugins: [],

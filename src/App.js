@@ -8,6 +8,7 @@ import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import ScrollToTop from './components/ScrollToTop'; 
+import BookNow from './components/BookNow';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/book-now" element={<BookNow />} />
         </Routes>
         <Footer />
       </div>

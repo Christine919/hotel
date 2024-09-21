@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+h1,h2,h3,h4{
+  font-family: font-title;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
 html body * {
   box-sizing: border-box;
-  font-family: 'Open Sans', Arial, sans-serif;
 }
 .gridywrap {
   max-height: 80vh; /* Adjust based on your layout */
@@ -182,4 +185,3 @@ h1 {
 .intro p a {
   color: #FA8CD3;
 }
-

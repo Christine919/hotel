@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FiMenu, FiX } from 'react-icons/fi'; // Import icons for mobile menu
+import { FiMenu, FiX } from 'react-icons/fi'; 
 import { motion } from 'framer-motion';
 
 const Header = () => {
@@ -11,13 +11,13 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-darkgrey text-lightgrey p-5 flex justify-between items-center shadow-lg">
+    <header className="fixed top-0 left-0 w-full z-50 bg-darkgrey text-lightgrey p-5 flex items-center shadow-lg">
       <h1 className="text-primary font-bold text-3xl">
-  <Link to="/">LuxeStay</Link>
-</h1>
+        <Link to="/">LuxeStay</Link>
+      </h1>
       
       {/* Mobile Menu Button */}
-      <div className="md:hidden">
+      <div className="md:hidden ml-auto">
         <button onClick={toggleMenu} className="text-lightgrey focus:outline-none">
           {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>
@@ -42,7 +42,7 @@ const Header = () => {
       )}
       
       {/* Desktop Navigation */}
-      <nav className={`hidden md:flex space-x-6`}>
+      <nav className={`hidden md:flex space-x-6 ml-auto`}>
         <Link to="/" className="block py-2 hover:text-primary">Home</Link>
         <Link to="/rooms" className="block py-2 hover:text-primary">Rooms</Link>
         <Link to="/services" className="block py-2 hover:text-primary">Services</Link>
@@ -51,9 +51,12 @@ const Header = () => {
       </nav>
 
       {/* Book Now Button */}
-      <button className="hidden md:block bg-primary text-darkgrey p-2 rounded-md">
-        Book Now
-      </button>
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        className="bg-primary text-darkgrey text-sm rounded-md text-lg ml-4"
+      >
+        <Link to="/rooms" className="hidden md:block p-2">Book Now</Link>
+      </motion.button>
     </header>
   );
 };
