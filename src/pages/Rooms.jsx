@@ -97,7 +97,7 @@ const Rooms = () => {
       </button>
 
       {/* Check Bar - square size on mobile */}
-<div className={`text-white p-4 border-solid border-2 border-gray-300 border-opacity-50 rounded-lg shadow-lg mb-10 w-full max-w-5xl ${showCheckBar ? '' : 'hidden sm:block'} sm:w-auto sm:h-auto`}>
+      <div className={`text-white p-4 border-solid border-2 border-gray-300 border-opacity-50 rounded-lg shadow-lg mb-10 w-full max-w-5xl ${showCheckBar ? '' : 'hidden sm:block'} sm:w-auto sm:h-auto`}>
   {/* Flex container for inputs */}
   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
     {/* Adults and Children inputs stay on the same line even on mobile */}
@@ -122,24 +122,24 @@ const Rooms = () => {
       </div>
     </div>
 
-    {/* Check-in and Check-out inputs on the same line for mobile */}
+    {/* Check-in and Check-out inputs */}
     <div className="flex flex-col sm:flex-row sm:items-center mb-4 sm:mb-0 sm:mr-4">
-      <div className="flex items-center mr-4">
+      <div className="flex flex-col sm:flex-row sm:items-center mb-4 sm:mb-0 sm:mr-4">
         <label className="mr-2">Check-in:</label>
         <input 
           type="date" 
           value={checkIn} 
           onChange={(e) => setCheckIn(e.target.value)} 
-          className="text-black border p-1 w-32" 
+          className="text-black border p-1 w-full sm:w-auto mb-2 sm:mb-0" 
         />
       </div>
-      <div className="flex items-center">
+      <div className="flex flex-col sm:flex-row sm:items-center">
         <label className="mr-2">Check-out:</label>
         <input 
           type="date" 
           value={checkOut} 
           onChange={(e) => setCheckOut(e.target.value)} 
-          className="text-black border p-1 w-32" 
+          className="text-black border p-1 w-full sm:w-auto" 
         />
       </div>
     </div>
@@ -155,7 +155,6 @@ const Rooms = () => {
     </div>
   </div>
 </div>
-
 
 
       {/* Room Listings */}
